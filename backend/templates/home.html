@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Expense Tracker and Budget Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Expense Tracker and Budget Tool!</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('init') }}">Submit Transaction</a></li>
+            <li><a href="{{ url_for('init') }}">Upload Transactions</a></li>
+            <li><a href="{{ url_for('view_transactions') }}">View Transactions</a></li>
+            <li><a href="{{ url_for('monthly_report') }}">Monthly Report</a></li>
+            <li><a href="{{ url_for('category_report') }}">Category Report</a></li>
+        </ul>
+    </nav>
+    <p>Select an option from the menu above to get started.</p>
+</body>
+</html>

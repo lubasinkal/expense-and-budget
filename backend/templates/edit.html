@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Transaction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Edit Transaction</h1>
+    <form action="" method="POST">
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" value="{{ transaction.date }}">
+        
+        <label for="category">Category</label>
+        <input type="text" name="category" id="category" value="{{ transaction.category }}">
+        
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id="amount" value="{{ transaction.amount }}">
+        
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
