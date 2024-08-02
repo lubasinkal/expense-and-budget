@@ -1,4 +1,4 @@
-# Transaction Management System
+# Expense and Budget Tracker
 
 ## Description
 
